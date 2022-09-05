@@ -4,11 +4,6 @@ sap.ui.define([
 ], function (Controller, MessageToast) {
    "use strict";
    return Controller.extend("sap.ui.demo.walkthrough.controller.App", {
-      metadat:{
-         interfaces: ["sap.ui.core.IAsyncContentCreation"],
-         manifest: "json"
-      },
-      
       onShowHello : function () {
          // read msg from i18n model
          var oBundle = this.getView().getModel("i18n").getResourceBundle();
