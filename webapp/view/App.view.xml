@@ -6,15 +6,21 @@
    <Shell>
       <App>
          <Page title="{i18n>homePageTitle}">
-            <Panel headerText="{i18n>helloPanelTitle}">
+            <Panel 
+                   headerText="{i18n>helloPanelTitle}" 
+                   class="sapUiResponsiveMargin"
+                   width="auto">
                <Button
                   text="{i18n>showHelloButtonText}"
-                  press=".onShowHello"/>
+                  press=".onShowHello"
+                  class="sapUiSmallMarginEnd"/>
                <Input
                   value="{/recipient/name}"
-                  description="Hello {/recipient/name}"
-                  valueLiveUpdate="true"
+                  valueLiveUpdate="true"  
                   width="60%"/>
+               <Text
+                  text="Hello {/recipient/name}"
+                  class="sapUiSmallMargin"/>
             </Panel>
          </Page>
       </App>
