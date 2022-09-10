@@ -7,15 +7,20 @@
       class="sapUiResponsiveMargin"
       width="auto">
         <Button
-        text="{i18n>showHelloButtonText}"
-        press=".onShowHello"
-        class="myCustomButton"/>
+            id="HelloDialogButton"
+            text="{i18n>showHelloDialogButtonText}"
+            press=".onOpenDialog"
+            class="sapUiSmallMarginEnd"/>
+        <Button
+            text="{i18n>showHelloButtonText}"
+            press=".onShowHello"
+            class="myCustomButton"/>
         <Input
-        value="{/recipient/name}"
-        valueLiveUpdate="true"
-        width="60%"/>
+            value="{/recipient/name}"
+            valueLiveUpdate="true"
+            width="60%"/>
         <FormattedText
-        htmlText="Hello {/recipient/name}"
-        class="sapUiSmallMargin sapThemeHighlight-asColor myCustomText"/>
+            htmlText="Hello {/recipient/name}"
+            class="sapUiSmallMargin sapThemeHighlight-asColor myCustomText"/>
    </Panel>
 </mvc:View>
