@@ -4,6 +4,10 @@
    <Dialog
       id="helloDialog"
       title="Hello {/recipient/name}">
+      <core:Icon
+            src="sap-icon://hello-world"
+            size="6rem"
+            class="sapUiMediumMargin"/>
       <beginButton>
         <Button
                 text="{i18n>dialogCloseButtonText}"
