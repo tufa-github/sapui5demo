@@ -4,5 +4,15 @@
    <Dialog
       id="helloDialog"
       title="Hello {/recipient/name}">
+      <beginButton>
+        <Button
+                text="{i18n>dialogCloseButtonText}"
+                press=".onCloseDialog"/>
+      </beginButton>
+      <endButton>
+        <Button
+                text="{i18n>dialogOpneButtonText}"
+                press=".onReopenDialog"/>
+      </endButton>
    </Dialog>
 </core:FragmentDefinition>
